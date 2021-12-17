@@ -33,16 +33,373 @@
         font-family: "Quicksand", sans-serif;
       }
 
- 
+      .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 240px);
+        gap: 26px;
+        place-content: center;
+      }
+
+      .product-card {
+        width: 240px;
+      }
+
+      .product-card > img {
+        width: 240px;
+        height: 240px;
+        object-fit: cover;
+        border-radius: 24px;
+      }
+
+      .product-info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 12px;
+      }
+
+      .product-card  figure {
+       margin: 0;
+      }
+
+      .product-info div p:nth-child(1){
+          font-weight: 700;
+          font-size: var(--md);
+          margin-top: 0px;
+          margin-bottom: 4px;
+      }
+
+      .product-info div p:nth-child(2){
+          font-size: var(--sm);
+          margin-top: 0px;
+          margin-bottom: 0px;
+          color: var(--very-light-pink);
+      }
+
+
+      @media (max-width: 640px) {
+        .cards-container {
+        grid-template-columns: repeat(auto-fill, 140px);
+      }
+
+      .product-card {
+        width: 140px;
+      }
+
+      .product-card > img {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 24px;
+      }
+      }
+
+
     </style>
   </head>
   <body>
+    <section class="main-container">
+      <div class="cards-container">
 
-    
+        <div class="product-card">
+          <img
+            src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMNKm7eSpFJVkZ61kZx6kyyb2P-Fk4QvFsciPDAf_MOUFd8Dyo"
+            alt=""
+          />
+          <div class="product-info">
+            <div class="product">
+              <p>$ 120,00</p>
+              <p>Round shelf</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="add cart" />
+            </figure>
+          </div>
+        </div>
 
+        <div class="product-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjj1-3AbD9xWpFXRjGrgcQYk1_NeQeKtTWpWJSMJvkvdww9f1W"
+            alt=""
+          />
+          <div class="product-info">
+            <div class="product">
+              <p>$ 120,00</p>
+              <p>Refrigerator</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="add cart" />
+            </figure>
+          </div>
+        </div>
 
+        <div class="product-card">
+            <img
+              src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMNKm7eSpFJVkZ61kZx6kyyb2P-Fk4QvFsciPDAf_MOUFd8Dyo"
+              alt=""
+            />
+            <div class="product-info">
+              <div class="product">
+                <p>$ 120,00</p>
+                <p>Round shelf</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="add cart" />
+              </figure>
+            </div>
+          </div>
+  
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjj1-3AbD9xWpFXRjGrgcQYk1_NeQeKtTWpWJSMJvkvdww9f1W"
+              alt=""
+            />
+            <div class="product-info">
+              <div class="product">
+                <p>$ 120,00</p>
+                <p>Refrigerator</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="add cart" />
+              </figure>
+            </div>
+          </div>
+  
 
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMNKm7eSpFJVkZ61kZx6kyyb2P-Fk4QvFsciPDAf_MOUFd8Dyo"
+              alt=""
+            />
+            <div class="product-info">
+              <div class="product">
+                <p>$ 120,00</p>
+                <p>Round shelf</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="add cart" />
+              </figure>
+            </div>
+          </div>
+  
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjj1-3AbD9xWpFXRjGrgcQYk1_NeQeKtTWpWJSMJvkvdww9f1W"
+              alt=""
+            />
+            <div class="product-info">
+              <div class="product">
+                <p>$ 120,00</p>
+                <p>Refrigerator</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="add cart" />
+              </figure>
+            </div>
+          </div>
+  
 
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMNKm7eSpFJVkZ61kZx6kyyb2P-Fk4QvFsciPDAf_MOUFd8Dyo"
+              alt=""
+            />
+            <div class="product-info">
+              <div class="product">
+                <p>$ 120,00</p>
+                <p>Round shelf</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="add cart" />
+              </figure>
+            </div>
+          </div>
+  
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjj1-3AbD9xWpFXRjGrgcQYk1_NeQeKtTWpWJSMJvkvdww9f1W"
+              alt=""
+            />
+            <div class="product-info">
+              <div class="product">
+                <p>$ 120,00</p>
+                <p>Refrigerator</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="add cart" />
+              </figure>
+            </div>
+          </div>
+  
 
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMNKm7eSpFJVkZ61kZx6kyyb2P-Fk4QvFsciPDAf_MOUFd8Dyo"
+              alt=""
+            />
+            <div class="product-info">
+              <div class="product">
+                <p>$ 120,00</p>
+                <p>Round shelf</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="add cart" />
+              </figure>
+            </div>
+          </div>
+  
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjj1-3AbD9xWpFXRjGrgcQYk1_NeQeKtTWpWJSMJvkvdww9f1W"
+              alt=""
+            />
+            <div class="product-info">
+              <div class="product">
+                <p>$ 120,00</p>
+                <p>Refrigerator</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="add cart" />
+              </figure>
+            </div>
+          </div>
+  
+
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMNKm7eSpFJVkZ61kZx6kyyb2P-Fk4QvFsciPDAf_MOUFd8Dyo"
+              alt=""
+            />
+            <div class="product-info">
+              <div class="product">
+                <p>$ 120,00</p>
+                <p>Round shelf</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="add cart" />
+              </figure>
+            </div>
+          </div>
+  
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjj1-3AbD9xWpFXRjGrgcQYk1_NeQeKtTWpWJSMJvkvdww9f1W"
+              alt=""
+            />
+            <div class="product-info">
+              <div class="product">
+                <p>$ 120,00</p>
+                <p>Refrigerator</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="add cart" />
+              </figure>
+            </div>
+          </div>
+  
+
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMNKm7eSpFJVkZ61kZx6kyyb2P-Fk4QvFsciPDAf_MOUFd8Dyo"
+              alt=""
+            />
+            <div class="product-info">
+              <div class="product">
+                <p>$ 120,00</p>
+                <p>Round shelf</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="add cart" />
+              </figure>
+            </div>
+          </div>
+  
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjj1-3AbD9xWpFXRjGrgcQYk1_NeQeKtTWpWJSMJvkvdww9f1W"
+              alt=""
+            />
+            <div class="product-info">
+              <div class="product">
+                <p>$ 120,00</p>
+                <p>Refrigerator</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="add cart" />
+              </figure>
+            </div>
+          </div>
+  
+
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMNKm7eSpFJVkZ61kZx6kyyb2P-Fk4QvFsciPDAf_MOUFd8Dyo"
+              alt=""
+            />
+            <div class="product-info">
+              <div class="product">
+                <p>$ 120,00</p>
+                <p>Round shelf</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="add cart" />
+              </figure>
+            </div>
+          </div>
+  
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjj1-3AbD9xWpFXRjGrgcQYk1_NeQeKtTWpWJSMJvkvdww9f1W"
+              alt=""
+            />
+            <div class="product-info">
+              <div class="product">
+                <p>$ 120,00</p>
+                <p>Refrigerator</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="add cart" />
+              </figure>
+            </div>
+          </div>
+  
+
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMNKm7eSpFJVkZ61kZx6kyyb2P-Fk4QvFsciPDAf_MOUFd8Dyo"
+              alt=""
+            />
+            <div class="product-info">
+              <div class="product">
+                <p>$ 120,00</p>
+                <p>Round shelf</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="add cart" />
+              </figure>
+            </div>
+          </div>
+  
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjj1-3AbD9xWpFXRjGrgcQYk1_NeQeKtTWpWJSMJvkvdww9f1W"
+              alt=""
+            />
+            <div class="product-info">
+              <div class="product">
+                <p>$ 120,00</p>
+                <p>Refrigerator</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="add cart" />
+              </figure>
+            </div>
+          </div>
+  
+                
+
+  
+      </div>
+    </section>
   </body>
 </html>
